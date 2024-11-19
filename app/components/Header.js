@@ -20,6 +20,7 @@ import {
   Newspaper,
   HandHeart,
 } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 
 const tenor = Tenor_Sans({ subsets: ["latin"], weight: ["400"] });
 
@@ -60,12 +61,9 @@ export default function Header() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Donate</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <NavigationMenuLink>Donation Link 1</NavigationMenuLink>
-                <NavigationMenuLink>Donation Link 2</NavigationMenuLink>
-                <NavigationMenuLink>Donation Link 3</NavigationMenuLink>
-              </NavigationMenuContent>
+              <NavigationMenuLink className="font-medium">
+                Donate
+              </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
@@ -155,8 +153,9 @@ export default function Header() {
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
-
-            <NavigationMenuLink>Contact Us</NavigationMenuLink>
+            <NavigationMenuLink className="font-medium">
+              Contact Us
+            </NavigationMenuLink>
           </NavigationMenuList>
         </NavigationMenu>
       </div>
