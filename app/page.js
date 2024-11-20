@@ -69,7 +69,7 @@ export default function Home() {
           }}
         >
           <img
-            className="z-10 object-cover w-full h-[500px] mt-16 relative"
+            className="z-10 w-full h-[500px] mt-16 relative object-cover object-center"
             src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bG9nZSUyMG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
             alt=""
           />
@@ -131,10 +131,7 @@ export default function Home() {
               </a>
             </div>
             <div className="bg-red-500 w-full h-full rounded">
-              <img
-                src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bG9nZSUyMG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
-                alt=""
-              />
+              <img src="/zinduka-worldserve.jpg" alt="" />
             </div>
           </motion.div>
         </div>
@@ -192,6 +189,167 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="my-32 relative">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="flex w-full items-center gap-16">
+            <img
+              className="w-[35%] object-cover rounded align-middle"
+              src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bG9nZSUyMG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+              alt=""
+            />
+
+            <div className="flex flex-col w-[65%]">
+              <h2
+                className={`${poppins.className} font-medium text-[48px] my-3 leading-10`}
+              >
+                Our Programmes
+              </h2>
+              <p className="text-[#043F2E] my-3 text-xl leading-normal tracking-tighter">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Blanditiis deserunt reprehenderit saepe earum perferendis
+                perspiciatis aut, neque consequuntur. At cum culpa ab rerum et
+                odit repellendus? Nobis quis ut necessitatibus.
+              </p>
+              <div className="mt-5">
+                <div className="grid grid-cols-2 grid-rows-2 gap-5">
+                  <div className="p-5 bg-off-white rounded flex flex-col">
+                    <a
+                      className={`${poppins.className} text-[24px] font-medium text-dark-green hover:text-link-secondary transition duration-300 ease-in-out`}
+                      href="#"
+                    >
+                      Lorem, ipsum.
+                    </a>
+                    <p className="my-3 text-lg leading-normal tracking-tighter">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a
+                      className="mt-5 text-xl font-medium text-dark-green hover:text-light-green transition duration-300 ease-in-out"
+                      href="#"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                  <div className="p-5 bg-off-white rounded flex flex-col">
+                    <a
+                      className={`${poppins.className} text-[24px] font-medium text-dark-green hover:text-link-secondary transition duration-300 ease-in-out`}
+                      href="#"
+                    >
+                      Lorem, ipsum.
+                    </a>
+                    <p className="my-3 text-lg leading-normal tracking-tighter">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a
+                      className="mt-5 text-xl font-medium text-dark-green hover:text-light-green transition duration-300 ease-in-out"
+                      href="#"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                  <div className="p-5 bg-off-white rounded flex flex-col">
+                    <a
+                      className={`${poppins.className} text-[24px] font-medium text-dark-green hover:text-link-secondary transition duration-300 ease-in-out`}
+                      href="#"
+                    >
+                      Lorem, ipsum.
+                    </a>
+                    <p className="my-3 text-lg leading-normal tracking-tighter">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a
+                      className="mt-5 text-xl font-medium text-dark-green hover:text-light-green transition duration-300 ease-in-out"
+                      href="#"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                  <div className="p-5 bg-off-white rounded flex flex-col">
+                    <a
+                      className={`${poppins.className} text-[24px] font-medium text-dark-green hover:text-link-secondary transition duration-300 ease-in-out`}
+                      href="#"
+                    >
+                      Lorem, ipsum.
+                    </a>
+                    <p className="my-3 text-lg leading-normal tracking-tighter">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a
+                      className="mt-5 text-xl font-medium text-dark-green hover:text-light-green transition duration-300 ease-in-out"
+                      href="#"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-36 relative">
+        <div className="max-w-[1200px] mx-auto px-4 ">
+          <div className="py-8 z-10 relative items-center flex rounded w-full bg-off-white justify-between">
+            <div className="text-center flex-col w-[24%] relative">
+              <div>
+                <h2
+                  className={`${poppins.className} text-[80px] py-3 text-dark-green font-medium`}
+                >
+                  200+
+                </h2>
+              </div>
+              <p className="text-dark-green text-[20px] leading-5 my-4 font-medium">
+                Years of Experience
+              </p>
+            </div>
+            <div className="text-center flex-col items-center w-[24%] relative">
+              <div>
+                <h2
+                  className={`${poppins.className} text-[80px] py-3 text-dark-green font-medium`}
+                >
+                  200+
+                </h2>
+              </div>
+              <p className="text-dark-green text-[20px] leading-5 my-4 font-medium">
+                Years of Experience
+              </p>
+            </div>
+            <div className="text-center flex-col items-center w-[24%] relative">
+              <div>
+                <h2
+                  className={`${poppins.className} text-[80px] py-3 text-dark-green font-medium`}
+                >
+                  200+
+                </h2>
+              </div>
+              <p className="text-dark-green text-[20px] leading-5 my-4 font-medium">
+                Years of Experience
+              </p>
+            </div>
+            <div className="text-center flex-col items-center w-[24%] relative">
+              <div>
+                <h2
+                  className={`${poppins.className} text-[80px] py-3 text-dark-green font-medium`}
+                >
+                  200+
+                </h2>
+              </div>
+              <p className="text-dark-green text-[20px] leading-5 my-4 font-medium">
+                Years of Experience
+              </p>
+            </div>
+          </div>
+          <div
+            style={{
+              backgroundPosition: "0 0, 50% 20%",
+              backgroundImage:
+                "linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('https://assets-global.website-files.com/65c0df150844df102b9d81bb/6618e001e065b098c77cffdb_BG%20(1).webp')",
+            }}
+            className="bg-cover w-full h-[72%] absolute top-0 left-0 right-0 bottom-auto"
+          ></div>
         </div>
       </section>
     </>
