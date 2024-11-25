@@ -1,3 +1,4 @@
+import EventsScroller from "@/components/sections/events";
 import Header from "./components/Header";
 import * as motion from "motion/react-client";
 import { Poppins } from "next/font/google";
@@ -351,6 +352,10 @@ export default function Home() {
             className="bg-cover w-full h-[72%] absolute top-0 left-0 right-0 bottom-auto"
           ></div>
         </div>
+      </section>
+
+      <section className="pb-32 relative">
+        <EventsScroller />
       </section>
     </>
   );
