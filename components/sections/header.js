@@ -5,13 +5,12 @@ import { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
-  //   NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  //   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+
 import {
   Article,
   BookOpenText,
@@ -20,7 +19,6 @@ import {
   Newspaper,
   HandHeart,
 } from "@phosphor-icons/react/dist/ssr";
-import Link from "next/link";
 
 const tenor = Tenor_Sans({ subsets: ["latin"], weight: ["400"] });
 

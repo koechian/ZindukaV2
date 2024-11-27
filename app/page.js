@@ -1,9 +1,13 @@
 import EventsScroller from "@/components/sections/events";
-import Header from "./components/Header";
 import * as motion from "motion/react-client";
 import { Poppins } from "next/font/google";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { Space_Grotesk } from "next/font/google";
+import Header from "@/components/sections/Header";
+import Footer from "@/components/sections/footer";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
+const space_grotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (
@@ -354,9 +358,191 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Events Section */}
       <section className="pb-32 relative">
         <EventsScroller />
       </section>
+
+      {/* Team Members Section */}
+      <section className="py-36 relative bg-[#F3F3F3]">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center max-w-[800px] mb-14 mx-auto">
+            <h2 className={`${poppins.className} text-[64px] leading-10 my-3`}>
+              Meet the Team
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 grid-rows-2 gap-10">
+            <div className="flex gap-5 items-center justify-start">
+              <img
+                className="w-[40%] h-full rounded object-cover"
+                src="https://via.assets.so/img.jpg?w=450&h=560&tc=white&bg=#cecece"
+              />
+              <div className="flex flex-col w-[70%]">
+                <p className="text-sm text-dark-green">Manager</p>
+                <h2
+                  className={`${poppins.className} text-[24px] my-3 font-medium`}
+                >
+                  John Doe
+                </h2>
+                <hr className="my-3 border-dark-green" />
+                <p>
+                  Team volunteering not only allows for greater impact but also
+                  fosters camaraderie and teamwork among participants.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-5 items-center justify-start">
+              <img
+                className="w-[40%] h-full rounded object-cover"
+                src="https://via.assets.so/img.jpg?w=450&h=560&tc=white&bg=#cecece"
+              />
+              <div className="flex flex-col w-[70%]">
+                <p className="text-sm text-dark-green">Manager</p>
+                <h2
+                  className={`${poppins.className} text-[24px] my-3 font-medium`}
+                >
+                  John Doe
+                </h2>
+                <hr className="my-3 border-dark-green" />
+                <p>
+                  Team volunteering not only allows for greater impact but also
+                  fosters camaraderie and teamwork among participants.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-5 items-center justify-start">
+              <img
+                className="w-[40%] h-full rounded object-cover"
+                src="https://via.assets.so/img.jpg?w=450&h=560&tc=white&bg=#cecece"
+              />
+              <div className="flex flex-col w-[70%]">
+                <p className="text-sm text-dark-green">Manager</p>
+                <h2
+                  className={`${poppins.className} text-[24px] my-3 font-medium`}
+                >
+                  John Doe
+                </h2>
+                <hr className="my-3 border-dark-green" />
+                <p>
+                  Team volunteering not only allows for greater impact but also
+                  fosters camaraderie and teamwork among participants.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-5 items-center justify-start">
+              <img
+                className="w-[40%] h-full rounded object-cover"
+                src="https://via.assets.so/img.jpg?w=450&h=560&tc=white&bg=#cecece"
+              />
+              <div className="flex flex-col w-[70%]">
+                <p className="text-sm text-dark-green">Manager</p>
+                <h2
+                  className={`${poppins.className} text-[24px] my-3 font-medium`}
+                >
+                  John Doe
+                </h2>
+                <hr className="my-3 border-dark-green" />
+                <p>
+                  Team volunteering not only allows for greater impact but also
+                  fosters camaraderie and teamwork among participants.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Paralax Section */}
+      <section
+        style={{
+          backgroundAttachment: "scroll, fixed",
+          backgroundPosition: "0 0,50%",
+          backgroundSize: "auto,cover",
+          backgroundImage:
+            "linear-gradient(#00000080, #00000080), url('https://cdn.prod.website-files.com/65c0df150844df102b9d81bb/6617a5c871e8dc48eacffb6a_Img%20Bg%20(1).jpg')",
+        }}
+        className="justify-flex-end w-full h-auto relative py-32"
+      >
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="text-center max-w-[75%]  flex-col flex mx-auto">
+            <h2
+              className={`${poppins.className} text-white text-[48px] leading-10 my-3`}
+            >
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <div className="flex justify-center mt-5 items-center">
+              <a className=" rounded-lg bg-white text-dark-green px-10 py-4 text-lg font-medium hover:bg-white hover:text-black hover:outline hover:outline-1  hover:outline-[#043F2E] transition duration-300 ease-in-out">
+                Become a Mentor
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Blogs and News Section */}
+      <section className="py-32 relative ">
+        <div className="max-w-[1200px] px-4 mx-auto">
+          <div className="text-center mb-14 mx-auto w-full  items-center flex justify-between">
+            <h2
+              className={`${poppins.className} text-[45px] font-bold text-dark-green leading-10 my-3`}
+            >
+              Latest Blogs and News
+            </h2>
+            <a className=" text-lg font-medium p-4 bg-dark-green text-white rounded-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-dark-green hover:outline hover:outline-1 hover:outline-[#043F2E] hover:cursor-pointer">
+              View More
+            </a>
+          </div>
+          <div className="grid grid-cols-3 gap-3">
+            {[1, 2, 3].map((card) => (
+              <div key={card} className="flex flex-col h-full">
+                <a href="" className="block mb-4">
+                  <img
+                    className="object-cover rounded w-full h-[250px]" // Fixed height for images
+                    src="https://via.placeholder.com/300x200"
+                    alt=""
+                  />
+                </a>
+                <div className="flex flex-col flex-grow">
+                  {" "}
+                  {/* Make content area grow to fill remaining space */}
+                  <div className="text-link-secondary my-3 font-medium">
+                    April 18, 2024
+                  </div>
+                  <div className="my-5">
+                    <a className={`${space_grotesk.className}`} href="">
+                      <span
+                        className={`${space_grotesk.className} text-3xl font-bold mt-2 block`}
+                      >
+                        Lorem ipsum dolor sit amet.
+                      </span>
+                    </a>
+                  </div>
+                  <p className="text-dark-green text-lg my-2 flex-grow">
+                    {" "}
+                    {/* Allow text to grow */}
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates commodi numquam, fugit vitae quidem sunt?
+                  </p>
+                  <a
+                    className="mt-auto flex items-center gap-3 text-dark-green
+                  font-semibold hover:text-link-secondary hover:underline
+                  transition-all duration-300 ease-in-out"
+                    href=""
+                  >
+                    Read More <ArrowRight weight="bold" color="#043F2E" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
